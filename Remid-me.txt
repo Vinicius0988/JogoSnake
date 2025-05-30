@@ -1,0 +1,19 @@
+Jogo da Cobra (Snake Game Mine Edition)
+
+Como executar o jogo:
+
+Clone ou baixe os arquivos do projeto.
+
+Abra a pasta do projeto no Visual Studio Code:
+
+Abra o Visual Studio Code.
+
+Clique em Arquivo > Abrir Pasta...
+
+Selecione a pasta do projeto e clique em Abrir.
+
+Abra o arquivo index.html no navegador:
+
+Clique com o botão direito no arquivo index.html.
+
+Selecione Abrir com Live Server (recomendado) ou abra diretamente no navegador.
