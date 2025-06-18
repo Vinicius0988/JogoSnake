@@ -1,86 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* Importa a fonte pixelada Press Start 2P */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Audiowide', cursive;
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove espaçamento interno padrão */
+    box-sizing: border-box; /* Define que padding e border fazem parte do tamanho total */
+    font-family: 'Press Start 2P', cursive; /* Define a fonte padrão do site */
 }
 
 body {
-    background-color: #191919;
-    display: flex;
-    min-height: 100vh; 
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; /* deixa as coisa uma em cima da outra */
-    color: white; /* cor do texto*/
-
+    background: #191919 url('../assets/mine.jpg') center / cover no-repeat; /* Fundo preto com imagem centralizada que cobre toda área e não repete */
+    display: flex; /* Usa flexbox para posicionar os elementos filhos */
+    min-height: 100vh; /* Altura mínima do body é 100% da altura da tela */
+    align-items: center; /* Alinha os filhos verticalmente no centro */
+    justify-content: center; /* Alinha os filhos horizontalmente no centro */
+    flex-direction: column; /* Organiza os filhos em coluna (um em cima do outro) */
+    color: white; /* Cor do texto branca */
 }
 
-
-
 canvas {
-    background-color: black;
-    border-radius: 10px;
-    max-width: 90vw;
+    background: black url('../assets/pedra.jpg') center / cover no-repeat; /* Fundo preto com imagem de pedra centralizada e coberta */
+    border-radius: 10px; /* Bordas arredondadas */
+    max-width: 90vw; /* Largura máxima de 90% da largura da viewport */
 }
 
 .score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.8rem;
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Coluna */
+    align-items: center; /* Centraliza itens horizontalmente */
+    font-size: 1.8rem; /* Tamanho da fonte */
 }
 
 .score--value {
-    font-weight: 700;
-    font-size: 4.5rem;
-    display: block;
-    margin-top: -10px;
-
+    font-weight: 700; /* Negrito */
+    font-size: 4.5rem; /* Fonte grande para destaque */
+    display: block; /* Exibe como bloco */
+    margin-top: -10px; /* Ajusta margem superior */
 }
+
 .menu-screen {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    align-items: center;
+    position: absolute; /* Posição absoluta */
+    display: none; /* Inicialmente escondido */
+    flex-direction: column; /* Organiza itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
 }
 
 .game-over {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 3rem;
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: 700; /* Negrito */
+    font-size: 3rem; /* Fonte grande */
 }
 
 .final-score {
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: 500; /* Peso médio da fonte */
+    font-size: 1.5rem; /* Tamanho da fonte */
 }
 
 .btn-play {
-    border: none;
-    border-radius: 100px;
-    padding: 10px 15px 10px 12px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: blueviolet;
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    cursor: pointer;
+    background-color: #3A7D2A; /* Cor de fundo verde grama Minecraft */
+    color: #F0F0E6; /* Cor do texto clara, quase off-white */
+    font-family: 'Press Start 2P', cursive; /* Fonte pixelada */
+    font-weight: 700; /* Negrito */
+    font-size: 1.1rem; /* Tamanho da fonte um pouco maior */
+    padding: 15px 30px; /* Espaçamento interno (vertical 15px, horizontal 30px) */
+    border: 4px solid #245618; /* Borda grossa verde escuro */
+    border-radius: 0; /* Cantos retos */
+    box-shadow: 6px 6px 0 #245618; /* Sombra sólida para efeito pixelado */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transições suaves para transformação e sombra */
 }
+
 .btn-play:hover {
-    background-color: blueviolet;
-    color: white;
-    transform: scale(1.1);
-    transition: 0.3s ease-in-out;
+    background-color: #6BC24A; /* Verde mais claro e vibrante ao passar o mouse */
+    color: #1B3A0B; /* Verde escuro para contraste no texto */
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
+    box-shadow: 9px 9px 0 #245618; /* Sombra maior para efeito de "bloco levantado" */
+    cursor: pointer; /* Cursor muda para indicar clique */
 }
-
-
-
-
-
-
